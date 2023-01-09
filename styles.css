@@ -1,7 +1,13 @@
+.body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	gap: 2%;
+	height: 100vh;
+}
 .left {
 	height: 56px;
-	left: 0px;
-	top: 0px;
 	background: #343a40;
 	font-family: 'Roboto';
 	font-style: normal;
@@ -25,7 +31,9 @@
 	margin-right: 24.48px;
 	gap: 16.48px;
 }
-
+#mediaBox {
+	display: none;
+}
 .home {
 	padding-top: 15px;
 	padding-left: 24.48px;
@@ -98,7 +106,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	height: 350.39px;
+	height: 45%;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 33px;
@@ -178,4 +186,78 @@ hr.line {
 	font-weight: 600;
 	font-size: 16px;
 	margin-bottom: 1px;
+	display: flex;
+}
+@media (max-width: 390px) {
+	.left {
+		height: 56px;
+	}
+	.list1 {
+		height: 85%;
+		width: 100vh;
+		justify-content: space-between;
+	}
+
+	.home {
+		display: none;
+	}
+	.link {
+		display: none;
+	}
+	.disabled {
+		display: none;
+	}
+	.dropdown {
+		display: none;
+	}
+	.boxSearch {
+		display: none;
+	}
+	.search {
+		display: none;
+	}
+	.searchTwo {
+		display: none;
+	}
+	.firstH {
+		margin-left: 31px;
+		margin-top: 35px;
+	}
+	.backgroundTop {
+		height: 40%;
+	}
+	.para1 {
+		margin-left: 31px;
+		margin-right: 52.91px;
+	}
+	.learnMore {
+		margin-left: 31px;
+	}
+	#mediaBox {
+		display: flex;
+		margin-top: 12px;
+		margin-left: 16px;
+		margin-bottom: 9px;
+		margin-right: 0px;
+		color: #ffffff80;
+		border-radius: 4px;
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-top: 3px;
+		border: 2px solid rgba(255, 255, 255, 0.5);
+	}
+	.list3 {
+		flex-direction: column;
+		margin-left: 31px;
+		width: 100%;
+	}
+	hr.line {
+		margin-left: 31px;
+		margin-right: 15px;
+		width: 360px;
+	}
+	.footer {
+		margin-left: 31px;
+		margin-right: 15px;
+	}
 }
